@@ -5,8 +5,8 @@ body {
     flex-direction: column;
     border: solid 1px green;
     height: 100vh;
+    background-color: lightcoral;
 }
-
 
 .parent-div {
     display: flex;
@@ -20,6 +20,9 @@ body {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    background-color: #4B4376;
+    border-radius: 4px;
+    color: white;
 }
 
 .childDiv {
@@ -30,9 +33,12 @@ body {
     height: 50px;
     width: 50px;
     border: solid 1px black;
+    transition: background-color 0.2s ease-in-out; /* Smooth transition */
+    background-color: white;
 }
 
 .childDiv:hover {
-    background-color: black;
-}
+    border: solid 1px red;
+    background-color: grey;
+} 
 

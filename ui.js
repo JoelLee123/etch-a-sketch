@@ -7,6 +7,25 @@ btn.addEventListener('click', () => {
     generateGrid(number);
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const parentDiv = document.querySelector("#parentDiv");
+
+    parentDiv.addEventListener("click", (event) => {
+        if (event.target.classList.contains("childDiv")) {
+            console.log("DIV CLICKED");
+
+            if (event.target.dataset.toggled === "true") {
+                event.target.style.backgroundColor = "white"; // Reset to original
+                event.target.dataset.toggled = "false";
+            } else {
+                event.target.style.backgroundColor = "black"; // Turns black on click
+                event.target.dataset.toggled = "true";
+            }
+        }
+    });
+});
+
+
 
 function getUserInput() {
     let number;
