@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    flex-direction: column;
+    border: solid 1px green;
+    height: 100vh;
+}
+
+
+.parent-div {
+    display: flex;
+    flex-wrap: wrap;/* ALlows items to wrap onto new rows */
+    margin-top: 20px;
+    justify-content: center;
+}
+
+#btnGenerator {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.childDiv {
+    /* THe boxes need a fixed width and height */
+    flex-basis: 0;
+    min-width: 50px;
+    min-height: 50px;
+    height: 50px;
+    width: 50px;
+    border: solid 1px black;
+}
+
+.childDiv:hover {
+    background-color: black;
+}
+
